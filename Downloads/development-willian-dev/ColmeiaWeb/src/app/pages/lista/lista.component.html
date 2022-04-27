@@ -1,0 +1,34 @@
+<div class="content">
+    <h3>Lista de Cameras</h3>
+    <hr>
+    <table class="table-table-hover">
+        <thead>
+            <th>Loja</th>
+            <th>Url</th>
+            <th>Ações</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cam of cameras">
+                <td>{{cam.lojaId}}</td>
+                <td>{{cam.url}}</td>
+                <td>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary" type="button" aria-hidden="true">
+                                <i class="tim-icons icon-pencil"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-danger" type="button" aria-hidden="true">
+                                <i class="tim-icons icon-trash-simple"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

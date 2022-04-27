@@ -1,0 +1,35 @@
+<div class=" content">
+    <div class=" row">
+        <!-- <ng-template> -->
+
+        <!-- </ng-template> -->
+        <ng-container *ngIf="cameras.length > 0">
+            <div #col class=" col-md-12" *ngFor="let cam of cameras; let i = index" [id] = "cam.cameraId">
+
+                <div class="card">
+                    <div class="card-body">
+                        <img [src]="cam.url">
+                        <!-- <video #video class="img" *ngIf="cam.tipo === 'video'" [src]="cam.url" [autoplay]="true" [muted]="true" [loop]="true"></video> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </ng-container>
+
+
+
+        <div class="container">
+            <output></output>
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <input class="form-control col-md-6" [(ngModel)]="message" />
+        <button class="btn btn-primary" (click)="sendMessage()">Enviar</button>
+
+        <span class="text" *ngFor="let message of messages">
+            {{message}}
+        </span>
+    </div> -->
+</div>

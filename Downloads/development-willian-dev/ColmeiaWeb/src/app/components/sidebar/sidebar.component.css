@@ -1,0 +1,24 @@
+.logo {
+    position: relative;
+    padding: 0.5rem 2.3rem 2.8rem;
+    z-index: 4;
+    top: 0px;
+}
+
+.logo-mini {
+    margin-bottom: 25px !important;
+}
+
+.logo-img {
+    width: 125px !important;
+    /* margin-bottom: 7px; */
+    margin-top: -20px;
+}
+
+.logo-img img {
+    width: 125px
+}
+
+.sidebar-wrapper {
+    overflow: hidden !important;
+}
